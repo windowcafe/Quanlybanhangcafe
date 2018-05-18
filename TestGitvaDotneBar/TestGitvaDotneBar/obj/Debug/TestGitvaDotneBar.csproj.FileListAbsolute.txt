@@ -7,3 +7,10 @@ C:\Users\Admin\Documents\GitHub\Quanlybanhangcafe\TestGitvaDotneBar\TestGitvaDot
 C:\Users\Admin\Documents\GitHub\Quanlybanhangcafe\TestGitvaDotneBar\TestGitvaDotneBar\obj\Debug\TestGitvaDotneBar.csproj.GenerateResource.Cache
 C:\Users\Admin\Documents\GitHub\Quanlybanhangcafe\TestGitvaDotneBar\TestGitvaDotneBar\obj\Debug\TestGitvaDotneBar.exe
 C:\Users\Admin\Documents\GitHub\Quanlybanhangcafe\TestGitvaDotneBar\TestGitvaDotneBar\obj\Debug\TestGitvaDotneBar.pdb
+C:\Users\theda\Documents\GitHub\Quanlybanhangcafe\TestGitvaDotneBar\TestGitvaDotneBar\obj\Debug\TestGitvaDotneBar.csprojResolveAssemblyReference.cache
+C:\Users\theda\Documents\GitHub\Quanlybanhangcafe\TestGitvaDotneBar\TestGitvaDotneBar\obj\Debug\TestGitvaDotneBar.Form1.resources
+C:\Users\theda\Documents\GitHub\Quanlybanhangcafe\TestGitvaDotneBar\TestGitvaDotneBar\obj\Debug\TestGitvaDotneBar.Properties.Resources.resources
+C:\Users\theda\Documents\GitHub\Quanlybanhangcafe\TestGitvaDotneBar\TestGitvaDotneBar\obj\Debug\TestGitvaDotneBar.csproj.GenerateResource.cache
+C:\Users\theda\Documents\GitHub\Quanlybanhangcafe\TestGitvaDotneBar\TestGitvaDotneBar\obj\Debug\TestGitvaDotneBar.csproj.CoreCompileInputs.cache
+C:\Users\theda\Documents\GitHub\Quanlybanhangcafe\TestGitvaDotneBar\TestGitvaDotneBar\obj\Debug\TestGitvaDotneBar.exe
+C:\Users\theda\Documents\GitHub\Quanlybanhangcafe\TestGitvaDotneBar\TestGitvaDotneBar\obj\Debug\TestGitvaDotneBar.pdb
