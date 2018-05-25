@@ -35,7 +35,9 @@
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar.Keyboard, Version=14.1.0.28, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04" />
     <Reference Include="DevComponents.DotNetBar.Layout, Version=14.1.0.28, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04" />
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=14.1.0.28, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.28, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04" />
+    <Reference Include="DevComponents.Instrumentation, Version=14.1.0.28, Culture=neutral, PublicKeyToken=f90dc37c26666a67" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,8 +58,14 @@
       <DependentUpon>BanHang.cs</DependentUpon>
     </Compile>
     <Compile Include="BS layer\BSBanHang.cs" />
-    <Compile Include="BS layer\BsQuanLy.cs" />
+    <Compile Include="BS layer\BSKho.cs" />
     <Compile Include="DB layer\DBmain.cs" />
+    <Compile Include="Kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kho.Designer.cs">
+      <DependentUpon>Kho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuanLy.cs">
@@ -72,8 +80,17 @@
     <Compile Include="ThanhToan.Designer.cs">
       <DependentUpon>ThanhToan.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BanHang.resx">
       <DependentUpon>BanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kho.resx">
+      <DependentUpon>Kho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThanhToan.resx">
       <DependentUpon>ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

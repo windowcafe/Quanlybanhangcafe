@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+<<<<<<< HEAD
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -38,6 +39,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+=======
+>>>>>>> da2702ad0bdce8ba70dfa5659c83085baf2ec1f9
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLy));
             this.lbTime = new System.Windows.Forms.Label();
             this.btnThongKe = new DevComponents.DotNetBar.ButtonX();
@@ -48,6 +51,7 @@
             this.btnBanHang = new DevComponents.DotNetBar.ButtonX();
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+<<<<<<< HEAD
             this.lbGiaBan = new DevComponents.DotNetBar.LabelX();
             this.comboBoxEx1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.txbBan = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -62,15 +66,21 @@
             this.dtgvThucDon = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.txbTimMon = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.lbMon = new DevComponents.DotNetBar.LabelX();
+=======
+>>>>>>> da2702ad0bdce8ba70dfa5659c83085baf2ec1f9
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX4 = new DevComponents.DotNetBar.ButtonX();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.panelEx1.SuspendLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvNhomMon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvThucDon)).BeginInit();
+=======
+>>>>>>> da2702ad0bdce8ba70dfa5659c83085baf2ec1f9
             this.groupPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -204,20 +214,6 @@
             // panelEx1
             // 
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx1.Controls.Add(this.lbGiaBan);
-            this.panelEx1.Controls.Add(this.comboBoxEx1);
-            this.panelEx1.Controls.Add(this.txbBan);
-            this.panelEx1.Controls.Add(this.lbBan);
-            this.panelEx1.Controls.Add(this.txbLoai);
-            this.panelEx1.Controls.Add(this.lbLoai);
-            this.panelEx1.Controls.Add(this.dtgvBan);
-            this.panelEx1.Controls.Add(this.dtgvNhomMon);
-            this.panelEx1.Controls.Add(this.buttonX5);
-            this.panelEx1.Controls.Add(this.buttonX6);
-            this.panelEx1.Controls.Add(this.buttonX4);
-            this.panelEx1.Controls.Add(this.dtgvThucDon);
-            this.panelEx1.Controls.Add(this.txbTimMon);
-            this.panelEx1.Controls.Add(this.lbMon);
             this.panelEx1.Controls.Add(this.groupPanel1);
             this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx1.Location = new System.Drawing.Point(5, 102);
@@ -233,6 +229,7 @@
             this.panelEx1.TabIndex = 24;
             this.panelEx1.Text = "panelEx1";
             // 
+<<<<<<< HEAD
             // lbGiaBan
             // 
             // 
@@ -495,11 +492,14 @@
             this.lbMon.TabIndex = 28;
             this.lbMon.Text = "Tìm món :";
             // 
+=======
+>>>>>>> da2702ad0bdce8ba70dfa5659c83085baf2ec1f9
             // groupPanel1
             // 
             this.groupPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.VS2005;
+            this.groupPanel1.Controls.Add(this.buttonX4);
             this.groupPanel1.Controls.Add(this.buttonX3);
             this.groupPanel1.Controls.Add(this.buttonX2);
             this.groupPanel1.Controls.Add(this.buttonX1);
@@ -537,30 +537,6 @@
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 0;
             // 
-            // buttonX3
-            // 
-            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX3.Location = new System.Drawing.Point(3, 149);
-            this.buttonX3.Name = "buttonX3";
-            this.buttonX3.Size = new System.Drawing.Size(181, 45);
-            this.buttonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2003;
-            this.buttonX3.TabIndex = 28;
-            this.buttonX3.Text = "Quản Lý Bàn";
-            this.buttonX3.Click += new System.EventHandler(this.buttonX3_Click);
-            // 
-            // buttonX2
-            // 
-            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX2.Location = new System.Drawing.Point(3, 76);
-            this.buttonX2.Name = "buttonX2";
-            this.buttonX2.Size = new System.Drawing.Size(181, 45);
-            this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2003;
-            this.buttonX2.TabIndex = 28;
-            this.buttonX2.Text = "Quản Lý Nhóm Món";
-            this.buttonX2.Click += new System.EventHandler(this.buttonX2_Click);
-            // 
             // buttonX1
             // 
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -571,7 +547,43 @@
             this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2003;
             this.buttonX1.TabIndex = 1;
             this.buttonX1.Text = "Quản Lý Thực Đơn";
+<<<<<<< HEAD
             this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+=======
+            // 
+            // buttonX2
+            // 
+            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX2.Location = new System.Drawing.Point(3, 76);
+            this.buttonX2.Name = "buttonX2";
+            this.buttonX2.Size = new System.Drawing.Size(181, 45);
+            this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2003;
+            this.buttonX2.TabIndex = 28;
+            this.buttonX2.Text = "buttonX2";
+            // 
+            // buttonX3
+            // 
+            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX3.Location = new System.Drawing.Point(3, 149);
+            this.buttonX3.Name = "buttonX3";
+            this.buttonX3.Size = new System.Drawing.Size(181, 45);
+            this.buttonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2003;
+            this.buttonX3.TabIndex = 28;
+            this.buttonX3.Text = "buttonX3";
+            // 
+            // buttonX4
+            // 
+            this.buttonX4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX4.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX4.Location = new System.Drawing.Point(3, 225);
+            this.buttonX4.Name = "buttonX4";
+            this.buttonX4.Size = new System.Drawing.Size(181, 45);
+            this.buttonX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2003;
+            this.buttonX4.TabIndex = 28;
+            this.buttonX4.Text = "buttonX4";
+>>>>>>> da2702ad0bdce8ba70dfa5659c83085baf2ec1f9
             // 
             // styleManager1
             // 
@@ -593,11 +605,13 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QuanLy";
             this.Text = "QuanLy";
-            this.Load += new System.EventHandler(this.QuanLy_Load);
             this.panelEx1.ResumeLayout(false);
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvNhomMon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvThucDon)).EndInit();
+=======
+>>>>>>> da2702ad0bdce8ba70dfa5659c83085baf2ec1f9
             this.groupPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -616,23 +630,10 @@
         private DevComponents.DotNetBar.RibbonControl ribbonControl1;
         private DevComponents.DotNetBar.PanelEx panelEx1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
+        private DevComponents.DotNetBar.ButtonX buttonX4;
         private DevComponents.DotNetBar.ButtonX buttonX3;
         private DevComponents.DotNetBar.ButtonX buttonX2;
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private DevComponents.DotNetBar.StyleManager styleManager1;
-        private DevComponents.DotNetBar.ButtonX buttonX5;
-        private DevComponents.DotNetBar.ButtonX buttonX6;
-        private DevComponents.DotNetBar.ButtonX buttonX4;
-        private DevComponents.DotNetBar.Controls.DataGridViewX dtgvThucDon;
-        private DevComponents.DotNetBar.Controls.TextBoxX txbTimMon;
-        private DevComponents.DotNetBar.LabelX lbMon;
-        private DevComponents.DotNetBar.Controls.DataGridViewX dtgvNhomMon;
-        private DevComponents.DotNetBar.Controls.DataGridViewX dtgvBan;
-        private DevComponents.DotNetBar.Controls.TextBoxX txbLoai;
-        private DevComponents.DotNetBar.LabelX lbLoai;
-        private DevComponents.DotNetBar.LabelX lbBan;
-        private DevComponents.DotNetBar.Controls.TextBoxX txbBan;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx1;
-        private DevComponents.DotNetBar.LabelX lbGiaBan;
     }
 }

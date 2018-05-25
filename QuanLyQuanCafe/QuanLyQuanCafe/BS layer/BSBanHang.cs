@@ -48,5 +48,23 @@ namespace QuanLyQuanCafe.BS_layer
             return db.ExecuteQueryDataSet("select GiaBan,TenThucUong from BangGia,ThucUong " +
                 "where TenThucUong = N'"+tenTU+"' and BangGia.MaThucUong = ThucUong.MaThucUong", CommandType.Text);
         }
+        public DataSet LaySoHoaDon()
+        {
+            return db.ExecuteQueryDataSet("select count(*) from HoaDon", CommandType.Text);
+        }
+        public bool ThemHoaDon(string MaHoaDon,string TenBan,string Thoigian,string Catruc, ref string err)
+        {
+            string sqlString = "insert into HoaDon " +
+                "values('"+MaHoaDon+"', " +
+                "(select MaNhanVien from LichTrucNhanVien where (select MaBan from Ban where TenBan = N'"+TenBan+"') = MaBan and MaCaTruc = N'"+Catruc+"')," +
+                "(select MaBan from Ban where TenBan = N'"+TenBan+"'),'"+Thoigian+"');";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        }
+        public bool ThemChiTietHoaDon(string MaHoaDon, string ThucUong, string GiamGia, string SoLuong, ref string err)
+        {
+            string sqlString = "insert into ChiTietHoaDon " +
+                "values('" + MaHoaDon + "', (select MaThucUong from ThucUong where TenThucUong = N'" + ThucUong + "'),'" + GiamGia + "','" + SoLuong + "');";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+        }
     }
 }
