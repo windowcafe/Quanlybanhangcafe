@@ -20,6 +20,7 @@ namespace QuanLyQuanCafe
         List<ButtonX> lsbtnMenu = new List<ButtonX>();
         public int viTriBan;
         public bool XacNhan;
+        public int a;
 
 
         public BanHang()
@@ -27,7 +28,7 @@ namespace QuanLyQuanCafe
             InitializeComponent();
         }
         void LoadData()
-        { 
+        {
             timer1.Start();
             picBanHang.Visible = true;
             flayoutBan.Controls.Clear();
@@ -331,7 +332,7 @@ namespace QuanLyQuanCafe
             }
         }
 
-        private void timer1_Tick_1(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
             lbTime.Text = DateTime.Now.ToString();
         }
