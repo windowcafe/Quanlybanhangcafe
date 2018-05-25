@@ -17,15 +17,9 @@ namespace QuanLyQuanCafe
         }
         public string TenBan;
         public string TongTien;
-        public int vitri = 0;
-        public List<BanHienTai> lsBan;
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
             this.Hide();
-            BanHang frBanHang = new BanHang();
-            frBanHang.lsBan = lsBan;
-            frBanHang.viTriBan = vitri;
-            frBanHang.TinhTien();
         }
 
         private void ThanhToan_Load(object sender, EventArgs e)

@@ -18,7 +18,8 @@ namespace QuanLyQuanCafe
         public List<BanHienTai> lsBan = new List<BanHienTai>();
         List<ButtonX> lsNhomTU = new List<ButtonX>();
         List<ButtonX> lsbtnMenu = new List<ButtonX>();
-        public int viTriBan = 0;
+        public int viTriBan;
+        public int a;
 
 
         public BanHang()
@@ -322,8 +323,6 @@ namespace QuanLyQuanCafe
             ThanhToan frThanhToan = new ThanhToan();
             frThanhToan.TongTien = lsBan[viTriBan].TongTien.ToString();
             frThanhToan.TenBan = lbBan.Text;
-            frThanhToan.vitri = viTriBan;
-            frThanhToan.lsBan = lsBan;
             picBanHang.Visible = true;
             frThanhToan.ShowDialog();
         }
