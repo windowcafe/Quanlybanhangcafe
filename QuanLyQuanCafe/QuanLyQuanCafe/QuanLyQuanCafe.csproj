@@ -56,6 +56,7 @@
       <DependentUpon>BanHang.cs</DependentUpon>
     </Compile>
     <Compile Include="BS layer\BSBanHang.cs" />
+    <Compile Include="BS layer\BsQuanLy.cs" />
     <Compile Include="DB layer\DBmain.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
