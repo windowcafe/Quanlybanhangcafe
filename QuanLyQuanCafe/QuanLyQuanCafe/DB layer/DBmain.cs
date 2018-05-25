@@ -31,6 +31,29 @@ namespace QuanLyQuanCafe.DB_layer
             da.Fill(ds);
             return ds;
         }
+        public bool MyExecuteNonQuery(string strSQL, CommandType ct, ref string error)
+        {
+            bool f = false;
+            if (conn.State == ConnectionState.Open)
+                conn.Close();
+            conn.Open();
+            comm.CommandText = strSQL;
+            comm.CommandType = ct;
+            try
+            {
+                comm.ExecuteNonQuery();
+                f = true;
+            }
+            catch (SqlException ex)
+            {
+                error = ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return f;
+        }
     }
 
 }

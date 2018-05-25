@@ -58,7 +58,11 @@
       <DependentUpon>BanHang.cs</DependentUpon>
     </Compile>
     <Compile Include="BS layer\BSBanHang.cs" />
+<<<<<<< HEAD
     <Compile Include="BS layer\BSKho.cs" />
+=======
+    <Compile Include="BS layer\BsQuanLy.cs" />
+>>>>>>> de3c9e290bc74853f7df09ca7f709ab02081b899
     <Compile Include="DB layer\DBmain.cs" />
     <Compile Include="Kho.cs">
       <SubType>Form</SubType>
