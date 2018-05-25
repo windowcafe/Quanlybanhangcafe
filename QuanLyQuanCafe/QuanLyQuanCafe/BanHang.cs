@@ -326,6 +326,21 @@ namespace QuanLyQuanCafe
             picBanHang.Visible = true;
             frThanhToan.ShowDialog();
         }
+
+        private void btnKho_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lbTime_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
