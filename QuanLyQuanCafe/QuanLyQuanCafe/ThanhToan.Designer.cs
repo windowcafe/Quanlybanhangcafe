@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnXacNhan = new DevComponents.DotNetBar.ButtonX();
             this.btnHuyBo = new DevComponents.DotNetBar.ButtonX();
             this.lbBan = new System.Windows.Forms.Label();
@@ -41,6 +42,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.txtGiamGia = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnXacNhan
@@ -197,10 +201,20 @@
             this.txtGiamGia.TabIndex = 12;
             this.txtGiamGia.TextChanged += new System.EventHandler(this.txtGiamGia_TextChanged);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(28, 94);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(32, 10);
+            this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.Visible = false;
+            // 
             // ThanhToan
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(303, 351);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtGiamGia);
             this.Controls.Add(this.label8);
@@ -218,6 +232,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThanhToan";
             this.Load += new System.EventHandler(this.ThanhToan_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,5 +253,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private DevComponents.DotNetBar.Controls.TextBoxX txtGiamGia;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

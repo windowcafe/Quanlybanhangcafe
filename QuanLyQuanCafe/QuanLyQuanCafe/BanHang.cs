@@ -19,6 +19,7 @@ namespace QuanLyQuanCafe
         List<ButtonX> lsNhomTU = new List<ButtonX>();
         List<ButtonX> lsbtnMenu = new List<ButtonX>();
         public int viTriBan;
+        public bool XacNhan;
 
 
         public BanHang()
@@ -95,7 +96,7 @@ namespace QuanLyQuanCafe
             lbGioDen.Text = bht.ThoiGian;
             flayoutDaGoi.Controls.Clear();
             flayoutMenu.Controls.Clear();
-            foreach(DaChon x in bht.lsDaChon)
+            foreach (DaChon x in bht.lsDaChon)
             {
                 flayoutDaGoi.Controls.Add(x.btnTenTU);
                 flayoutDaGoi.Controls.Add(x.btnSoLuong);
@@ -117,13 +118,6 @@ namespace QuanLyQuanCafe
                 btnThanhToan.Enabled = false;
                 lbTrangThai.Text = "Trống";
             }
-        }
-
-        public void TinhTien()
-        {
-            lsBan[viTriBan].serve = false;
-            lsBan[viTriBan].btnBan.BackColor = Color.Lime;
-            loadDatBan();
         }
 
         private void btNhomTU_click(object sender,EventArgs e)
@@ -181,11 +175,6 @@ namespace QuanLyQuanCafe
             btn.Tag = i;
             btn.Click += new EventHandler(btnTU_Click);
             return btn;
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            lbTime.Text = DateTime.Now.ToString();
         }
 
         private void btnGoiMon_Click(object sender, EventArgs e)
@@ -322,11 +311,29 @@ namespace QuanLyQuanCafe
             ThanhToan frThanhToan = new ThanhToan();
             frThanhToan.TongTien = lsBan[viTriBan].TongTien.ToString();
             frThanhToan.TenBan = lbBan.Text;
-            frThanhToan.lsBan = lsBan;
+            frThanhToan.ban = lsBan[viTriBan];
             picBanHang.Visible = true;
             frThanhToan.ShowDialog();
-            lsBan[viTriBan].serve = false;
-            lsBan[viTriBan].btnBan.BackColor = Color.Lime;
+            XacNhan = frThanhToan.XacNhan;
+
+            if (XacNhan == true)
+            {
+                btnHuy.Visible = false;
+                btnGoiMon.Enabled = false;
+                btnThanhToan.Enabled = false;
+                lsBan[viTriBan].serve = false;
+                lsBan[viTriBan].lsDaChon.Clear();
+                flayoutDaGoi.Controls.Clear();
+                btnDatCho.Enabled = true;
+                lsBan[viTriBan].btnBan.BackColor = Color.Lime;
+                lbGioDen.Text = lsBan[viTriBan].ThoiGian = "...";
+                lbTrangThai.Text = "Trống";
+            }
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            lbTime.Text = DateTime.Now.ToString();
         }
     }
 
