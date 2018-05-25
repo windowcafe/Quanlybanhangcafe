@@ -19,7 +19,6 @@ namespace QuanLyQuanCafe
         List<ButtonX> lsNhomTU = new List<ButtonX>();
         List<ButtonX> lsbtnMenu = new List<ButtonX>();
         public int viTriBan;
-        public int a;
 
 
         public BanHang()
@@ -27,7 +26,7 @@ namespace QuanLyQuanCafe
             InitializeComponent();
         }
         void LoadData()
-        {
+        { 
             timer1.Start();
             picBanHang.Visible = true;
             flayoutBan.Controls.Clear();
@@ -323,8 +322,11 @@ namespace QuanLyQuanCafe
             ThanhToan frThanhToan = new ThanhToan();
             frThanhToan.TongTien = lsBan[viTriBan].TongTien.ToString();
             frThanhToan.TenBan = lbBan.Text;
+            frThanhToan.lsBan = lsBan;
             picBanHang.Visible = true;
             frThanhToan.ShowDialog();
+            lsBan[viTriBan].serve = false;
+            lsBan[viTriBan].btnBan.BackColor = Color.Lime;
         }
     }
 
