@@ -17,7 +17,6 @@ namespace QuanLyQuanCafe
         }
         public string TenBan;
         public string TongTien;
-        public List<BanHienTai> lsBan;
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
             this.Hide();

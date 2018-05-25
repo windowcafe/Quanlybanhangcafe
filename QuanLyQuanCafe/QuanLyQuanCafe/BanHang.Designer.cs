@@ -114,7 +114,6 @@
             this.buttonItem24 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem25 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem26 = new DevComponents.DotNetBar.ButtonItem();
-            this.switchButton1 = new DevComponents.DotNetBar.Controls.SwitchButton();
             this.panelEx1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBanHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMenu)).BeginInit();
@@ -1031,7 +1030,7 @@
             this.btnBanHang.Location = new System.Drawing.Point(179, 42);
             this.btnBanHang.Name = "btnBanHang";
             this.btnBanHang.Size = new System.Drawing.Size(138, 54);
-            this.btnBanHang.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2003;
+            this.btnBanHang.Style = DevComponents.DotNetBar.eDotNetBarStyle.VS2005;
             this.btnBanHang.TabIndex = 5;
             this.btnBanHang.Text = "BÁN HÀNG";
             this.btnBanHang.Click += new System.EventHandler(this.btnBanHang_Click);
@@ -1167,22 +1166,9 @@
             this.buttonItem26.SubItemsExpandWidth = 24;
             this.buttonItem26.Text = "&Close";
             // 
-            // switchButton1
-            // 
-            // 
-            // 
-            // 
-            this.switchButton1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.switchButton1.Location = new System.Drawing.Point(1013, 55);
-            this.switchButton1.Name = "switchButton1";
-            this.switchButton1.Size = new System.Drawing.Size(66, 22);
-            this.switchButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.switchButton1.TabIndex = 19;
-            // 
             // BanHang
             // 
             this.ClientSize = new System.Drawing.Size(1184, 769);
-            this.Controls.Add(this.switchButton1);
             this.Controls.Add(this.lbTime);
             this.Controls.Add(this.panelEx1);
             this.Controls.Add(this.btnThongKe);
@@ -1289,6 +1275,5 @@
         private DevComponents.DotNetBar.LabelItem labelItem3;
         private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX2;
         private System.Windows.Forms.PictureBox picMenu;
-        private DevComponents.DotNetBar.Controls.SwitchButton switchButton1;
     }
 }
